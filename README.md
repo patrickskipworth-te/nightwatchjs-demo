@@ -11,7 +11,7 @@ Run a single sample test file:
 npx nightwatch test/testFileName.ext
 ```
 Run sample tests in parallel with multiple browsers at once:
+> running tests in parallel will prevent use of the `.debug()` function and the Nightwatch REPL
 ```
 npx nightwatch test/ --env firefox,chrome
 ```
-> running tests in parallel will prevent use of the `.debug()` function and the Nightwatch REPL
