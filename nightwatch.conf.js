@@ -14,7 +14,8 @@
 module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: ['test','nightwatch'],
+  src_folders: ['test'],
+  output_folder: 'reports',
 
   // See https://nightwatchjs.org/guide/concepts/page-object-model.html
   page_objects_path: [],
@@ -34,16 +35,17 @@ module.exports = {
   webdriver: {},
 
   test_workers: {
-    enabled: true
+    enabled: true,
+    workers: 2
   },
 
   test_settings: {
     default: {
       disable_error_log: false,
-      launch_url: 'http://localhost',
+      launch_url: 'https://the-internet.herokuapp.com/',
 
       screenshots: {
-        enabled: false,
+        enabled: true,
         path: 'screens',
         on_failure: true
       },
@@ -143,7 +145,7 @@ module.exports = {
   usage_analytics: {
     enabled: true,
     log_path: './logs/analytics',
-    client_id: 'dab64638-a609-4ac2-bbe5-989f45e64813'
+    client_id: '4000e735-54bb-476c-b508-d64b5dcc0f55'
   }
   
 };

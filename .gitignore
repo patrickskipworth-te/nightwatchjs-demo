@@ -1,4 +1,6 @@
+logs/
 nightwatch/
 node_modules/
-logs/
+reports/
+screens/
 tests_output/
