@@ -1,6 +1,42 @@
 # nightwatchjs-demo
 Files for a demo of NightwatchJS
 
+## Items included to demo
+```
+basicBrowserTest.ts
+```
+Basic test example
+
+```
+describeTest.ts
+```
+Test example with Mocha syntax
+
+```
+failingTest.ts
+```
+Test example which always fails
+
+```
+inspectorTest.ts
+```
+Test example which opens Nightwatch Inspector when run in debug mode
+
+```
+multiBrowserTest.ts
+```
+Test example with different results dependent on which browser it runs in
+
+```
+recordedTest.js
+```
+Test example created with the Google Chrome DevTools Recorder
+
+```
+stepthroughTest.ts
+```
+Test example which demonstrates the slow pause and debug functions
+
 ## Running the sample tests
 Run all tests with current default setting `from nightwatch.conf.js`:
 ```
